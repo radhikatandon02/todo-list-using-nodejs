@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif
+    }
+      /* Navbar styling */
+      nav {
+        background-color: #b882f6;
+        overflow: hidden;
+      }
+
+      nav a {
+        float:left;
+        color: white;
+        text-align: center;
+        padding: 25px 30px;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background-color: whitesmoke;
+        border-radius: 40px;
+        color: black;
+      }
+
+      /* Page content styling */
+      .content {
+        padding: 20px;
+      }
+      .todo-item {
+        
+        margin-left: 310px;
+        margin-top: 10px;
+        width: 45%;
+      }
+
+      .todo-item ol li{
+        padding: 10px;
+        margin: 6px;
+        border: 1px solid #000;
+      }
+
+      .todo-item ol li button{
+        background-color: #d4afff;
+        border-radius: 6px;
+        position: absolute;
+        right: 410px;
+      }
+
+      .todo-item ol li input{
+        position: absolute;
+        right: 440px;
+      }
+
+      #submitTodo{
+        background-color: #d4afff;
+        border-radius: 6px; 
+        height: 35px; 
+        width: 10%; 
+        padding: 4px;
+      }
+      #clear{
+        background-color: #d4afff;
+        border-radius: 6px; 
+        height: 35px; 
+        width: 10%; 
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="./contact">Contact</a>
+        <a href="./about">About</a>
+        <a href="./todo">Todo</a>
+      </nav>
+
+    <!-- Page content -->
+    <div class="content">
+      <h1 style="text-align: center;">My Todo List</h1>
+      
+      <div style="text-align: center;">
+        <input id="userInput" placeholder="Enter Here" style="height: 30px; width: 25%;" />
+
+        <button id="submitTodo">Add</button>
+        <button id="clear">Clear</button>
+      </div>
+      <!-- ...previous code... -->
+
+      <div class="todo-item">
+        <ol id="todo-item">
+          <!-- <li><span>Hey!</span><input type="checkbox"><button>X</button></li> -->
+        </ol>
+      </div>
+
+      <!-- ...next code... --> 
+    </div>
+  </body>
+  <script src="/todoScript"></script>
+</html>
